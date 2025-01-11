@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<meta charset="UTF-8">
-		<title>test</title>
-		<link rel="stylesheet" href="css/styles.css">
-	</head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome link -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <!-- custom icon link -->
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon" />
+
+    <!-- custom js file link -->
+    <script type="module" src="/js/main.js" defer></script>
+
+    <title>The Brand</title>
+</head>
 <div class="banner__container">
             <div class="banner__image">
                 <img src="https://static.insales-cdn.com/files/1/7165/35003389/original/mceu_67691256321716538477440-1716538477453.jpg" alt="banner">
@@ -19,5 +36,379 @@
         </div>
 <style> body { background-color: vC177FF; background-image: url('background.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;  } </style>
 </head>
+
+
+
 <body>
+    <div class="wrapper">
+        <div class="header">
+    <div class="header__container">
+        <a class="logo" href="/" class="logo">
+            <img src="/images/logo.png" alt="logotype" />
+        </a>
+
+        <nav class="navbar">
+    <ul class="menuList">
+        <li class="menu__item">
+            <a class="menu__link" href="/catalog/men">мужчины</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/catalog/women">женщины</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/catalog/kids">дети</a>
+        </li>
+    </ul>
+</nav>
+                    <div class="buttons">
+                <div class="fas fa-search" id="search_btn"></div>
+                <a href="/enter" class="fas fa-user" id="user_btn"></a>
+                <div class="fas fa-shopping-cart" id="cart_btn">
+                <div class="cartIdentificator">
+                    <span id="quantityItemsInCard">
+						                            0                        					</span>
+                </div>
+            </div>
+                <div class="fas fa-bars" id="menu_btn"></div>
+            </div>
+                <form class="searchForm" action="/search" method="post">
+            <input type="search" name="search" id="search-box" placeholder="Поиск по сайту" />
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+
+        <div class="cartContainer">
+    <div class="cartBox">
+			<p>Корзина пуста</p>
+	    </div>
+
+    <div class="totalPrice">
+        <span class="totalPrice__text">итого:</span>
+		<div>
+			<span id="total_price">
+									0							</span>
+			&#x20bd
+		</div>
+    </div>
+
+    <a href="/cart" class="cartBtn">перейти в корзину</a>
+</div>    </div>
+</div>
+
+<!-- *header section end -->
+        <main class='page'>
+            <section class="banner">
+        <div class="banner__container">
+            <div class="banner__image">
+                <img src="/images/header_banner.png" alt="banner" />
+            </div>
+            <div class="banner__textBlock">
+                <p class="banner__text big">THE BRAND</p>
+                <p class="banner__text">
+                    РОСКОШНАЯ
+                    <span class="banner__text red">ОДЕЖДА</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+<section class="offers">
+        <div class="offers__container">
+            <div class="imageContainer__short">
+                <img src="/images/offers_image01.png" alt="offer image" />
+                <div class="textContainer">
+                    <span class="textContainer__text">30% скидка</span>
+                    <span class="textContainer__text__bigred">для женщин</span>
+                </div>
+            </div>
+            <div class="imageContainer__short">
+                <img src="/images/offers_image02.png" alt="offer image" />
+                <div class="textContainer">
+                    <span class="textContainer__text">горячие предложения</span>
+                    <span class="textContainer__text__bigred">для мужчин</span>
+                </div>
+            </div>
+            <div class="imageContainer__short">
+                <img src="/images/offers_image03.png" alt="offer image" />
+                <div class="textContainer">
+                    <span class="textContainer__text">новые предложения</span>
+                    <span class="textContainer__text__bigred">для детей</span>
+                </div>
+            </div>
+            <div class="imageContainer__long">
+                <img src="/images/offers_image04.png" alt="offer image" />
+                <div class="textContainer">
+                <span class="textContainer__text"
+                >роскошные и модные тренды</span
+                >
+                    <span class="textContainer__text__bigred">аксессуаров</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="products">
+        <div class="products__container">
+            <h3 class="products_heading">Популярные товары</h3>
+            <p class="products_paragraph">
+                Покупайте товары на основе того, что мы представили на этой неделе
+            </p>
+            <div class="productsBox">
+                                    <div class="productsItem" data-id="2">
+    <a href="/product/2" class="productsItem imageContainer">
+        <img
+                src="/images/catalog/2.jpg"
+                alt="image product"
+        />
+    </a>
+    <div class="productsItem__textContainer">
+        <h4 class="productsItem__textContainer__heading" id="title">
+            ovs        </h4>
+        <p class="productsItem__textContainer__text">
+            Однотонная футболка из хлопка        </p>
+    </div>
+    <div class="productsItem__button">
+        <p class="productsItem__button_price"> <span id="price">990</span> &#x20bd</p>
+    </div>
+</div>                                    <div class="productsItem" data-id="3">
+    <a href="/product/3" class="productsItem imageContainer">
+        <img
+                src="/images/catalog/3.jpg"
+                alt="image product"
+        />
+    </a>
+    <div class="productsItem__textContainer">
+        <h4 class="productsItem__textContainer__heading" id="title">
+            desigual        </h4>
+        <p class="productsItem__textContainer__text">
+            Рубашка с цветочным принтом        </p>
+    </div>
+    <div class="productsItem__button">
+        <p class="productsItem__button_price"> <span id="price">9990</span> &#x20bd</p>
+    </div>
+</div>                                    <div class="productsItem" data-id="5">
+    <a href="/product/5" class="productsItem imageContainer">
+        <img
+                src="/images/catalog/5.jpg"
+                alt="image product"
+        />
+    </a>
+    <div class="productsItem__textContainer">
+        <h4 class="productsItem__textContainer__heading" id="title">
+            cap horn        </h4>
+        <p class="productsItem__textContainer__text">
+            Базовая футболка        </p>
+    </div>
+    <div class="productsItem__button">
+        <p class="productsItem__button_price"> <span id="price">1390</span> &#x20bd</p>
+    </div>
+</div>                                    <div class="productsItem" data-id="6">
+    <a href="/product/6" class="productsItem imageContainer">
+        <img
+                src="/images/catalog/6.jpg"
+                alt="image product"
+        />
+    </a>
+    <div class="productsItem__textContainer">
+        <h4 class="productsItem__textContainer__heading" id="title">
+            boss        </h4>
+        <p class="productsItem__textContainer__text">
+            Шапка из шерсти        </p>
+    </div>
+    <div class="productsItem__button">
+        <p class="productsItem__button_price"> <span id="price">5700</span> &#x20bd</p>
+    </div>
+</div>                                    <div class="productsItem" data-id="24">
+    <a href="/product/24" class="productsItem imageContainer">
+        <img
+                src="/images/catalog/24.jpg"
+                alt="image product"
+        />
+    </a>
+    <div class="productsItem__textContainer">
+        <h4 class="productsItem__textContainer__heading" id="title">
+            BOSS        </h4>
+        <p class="productsItem__textContainer__text">
+            Текстильная сумка бизнес        </p>
+    </div>
+    <div class="productsItem__button">
+        <p class="productsItem__button_price"> <span id="price">28990</span> &#x20bd</p>
+    </div>
+</div>                                    <div class="productsItem" data-id="71">
+    <a href="/product/71" class="productsItem imageContainer">
+        <img
+                src="/images/catalog/71.jpg"
+                alt="image product"
+        />
+    </a>
+    <div class="productsItem__textContainer">
+        <h4 class="productsItem__textContainer__heading" id="title">
+            Allsaints        </h4>
+        <p class="productsItem__textContainer__text">
+            Комбинированная куртка-бомбер        </p>
+    </div>
+    <div class="productsItem__button">
+        <p class="productsItem__button_price"> <span id="price">43290</span> &#x20bd</p>
+    </div>
+</div>                                    <div class="productsItem" data-id="1">
+    <a href="/product/1" class="productsItem imageContainer">
+        <img
+                src="/images/catalog/1.jpg"
+                alt="image product"
+        />
+    </a>
+    <div class="productsItem__textContainer">
+        <h4 class="productsItem__textContainer__heading" id="title">
+            colorplay        </h4>
+        <p class="productsItem__textContainer__text">
+            Худи с логотипом бренда        </p>
+    </div>
+    <div class="productsItem__button">
+        <p class="productsItem__button_price"> <span id="price">6990</span> &#x20bd</p>
+    </div>
+</div>                                    <div class="productsItem" data-id="27">
+    <a href="/product/27" class="productsItem imageContainer">
+        <img
+                src="/images/catalog/27.jpg"
+                alt="image product"
+        />
+    </a>
+    <div class="productsItem__textContainer">
+        <h4 class="productsItem__textContainer__heading" id="title">
+            Calvin Klein Jeans        </h4>
+        <p class="productsItem__textContainer__text">
+            Бейсболка с монограммой бренда        </p>
+    </div>
+    <div class="productsItem__button">
+        <p class="productsItem__button_price"> <span id="price">4610</span> &#x20bd</p>
+    </div>
+</div>                            </div>
+            <a href="/catalog/featured" class="products_allItems"
+            >Популярные продукты</a
+            >
+        </div>
+    </section>
+
+<section class="guarantees">
+    <div class="guarantees__container">
+        <div class="guarenteesBox">
+            <div class="guarenteesBox__item">
+                <div class="guarenteesBox__item_imageContainer">
+                    <img src="/images/delivery.png" alt="delivery" />
+                </div>
+                <div class="guarenteesBox__item_textContainer">
+                    <h4 class="guarenteesBox__item_textContainer_heading">
+                        Бесплатная доставка
+                    </h4>
+                    <p class="guarenteesBox__item_textContainer_text">
+                        Доставка по всей России и стран СНГ
+                    </p>
+                </div>
+            </div>
+            <div class="guarenteesBox__item">
+                <div class="guarenteesBox__item_imageContainer">
+                    <img src="/images/sales.png" alt="delivery" />
+                </div>
+                <div class="guarenteesBox__item_textContainer">
+                    <h4 class="guarenteesBox__item_textContainer_heading">
+                       Скидки
+                    </h4>
+                    <p class="guarenteesBox__item_textContainer_text">
+                        Предлагаем скидки для наших зарегестрированных и постоянных клиентов
+                    </p>
+                </div>
+            </div>
+            <div class="guarenteesBox__item">
+                <div class="imageContainer" style="padding-bottom: 10px">
+                    <img src="/images/quality.png" alt="sales" />
+                </div>
+                <div class="guarenteesBox__item_textContainer">
+                    <h4 class="guarenteesBox__item_textContainer_heading" >
+                        Специальные условия
+                    </h4>
+                    <p class="guarenteesBox__item_textContainer_text">
+                        Предлагаем экслюзивные товарых для наших постоянных клиентов и ранний доступ к лимитированным коллекциям
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="reviewsAndSub">
+    <div class="reviewsAndSub__container">
+        <div class="reviewContainer">
+            <div class="review">
+                                                            <div class="review_item">
+                            <div class="review__imageContainer">
+                                <img src="/images/users/12/default.png" alt="user_photo" />
+                            </div>
+                            <div class="review__textContainer">
+                                <p class="review__textContainer_text"><span> Аппрр Смиро</span></p>
+                                <p class="review__textContainer_text" style="font-size: inherit">
+                                    Ен                                </p>
+                            </div>
+                        </div>
+                                            <div class="review_item">
+                            <div class="review__imageContainer">
+                                <img src="/images/users/6/blink_ava2.jpg" alt="user_photo" />
+                            </div>
+                            <div class="review__textContainer">
+                                <p class="review__textContainer_text"><span> Иван Иванов</span></p>
+                                <p class="review__textContainer_text" style="font-size: inherit">
+                                    Привет из Беларуси!                                </p>
+                            </div>
+                        </div>
+                                            <div class="review_item">
+                            <div class="review__imageContainer">
+                                <img src="/images/users/5/default.png" alt="user_photo" />
+                            </div>
+                            <div class="review__textContainer">
+                                <p class="review__textContainer_text"><span> Марина  Васина</span></p>
+                                <p class="review__textContainer_text" style="font-size: inherit">
+                                    Слишком дорого!                                </p>
+                            </div>
+                        </div>
+                                                </div>
+        </div>
+        <div class="subscribeForm">
+            <p class="subscribeForm__text">
+                <span class="subscribeForm__text_bold">ПОДПИСАТЬСЯ</span>
+                На наш каталог и обновления товаров
+            </p>
+            <form id="form" method="post" novalidate>
+                <div style="display: flex; height: 100%">
+                    <input id="email_sub" name="email" type="email" placeholder="Укажите ваш email" />
+                    <button id="btn_sub" type="submit">Подписаться</button>
+                </div>
+                <p class="error_subs"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+        </main>
+        <footer class="footer">
+    <div class="footer__container">
+        <p class="copyright">© 2025 The Brand. Все права защищены.</p>
+        <nav class="footerMenu">
+            <a class="footerMenu__link" href="#"
+            ><i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+                <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+    </div>
+	
+	</body>
+
+
 </html>
